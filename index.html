@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <title>Tugas PWeb - CV</title>
+
+    <style>
+        :root {
+            --bg-light: #F0E9D2;
+            --bg-dark: #9BA17B;
+            --primary: #181D31;
+            --secondary: #263159;
+            --accent: #678983;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            padding-top: 50px;
+            background-color: var(--bg-light);
+            color: var(--primary);
+            height: 1500px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container>* {
+            width: 60vw;
+        }
+
+        .divider {
+            margin: 0 10vw;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        h1 {
+            font-weight: 800;
+            margin-top: 0.5em;
+        }
+
+        h2 {
+            font-weight: 500;
+        }
+
+        p,
+        table {
+            font-weight: 400;
+        }
+
+        header {
+            margin-bottom: 3em;
+        }
+
+        header>p {
+            margin-top: 0.5em;
+        }
+
+        section {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--bg-dark);
+            margin: 1em 0;
+            padding: 2em 0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        section>table,
+        section>p {
+            margin-top: 1em;
+        }
+
+        table {
+            text-align: left;
+        }
+
+        td {
+            padding: 0 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding-bottom: 1em;
+        }
+
+        a {
+            color: var(--bg-dark);
+            font-weight: 700;
+        }
+
+        a:hover {
+            color: var(--accent);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <img class=" photo" src="img/aurelio.png" alt="Foto profil" width="200" style="border-radius: 50%;">
+            <h1>Aurelio Killian Lexi Verrill</h1>
+            <p>Email: aurelioklv@gmail.com</p>
+        </header>
+
+        <!-- <div class="divider"></div> -->
+
+        <section>
+            <h2>Tentang Saya</h2>
+            <p>Perkenalkan, saya Lio.<br>Saya adalah mahasiswa Teknik Informatika ITS.<br></p>
+        </section>
+
+        <!-- <div class="divider"></div> -->
+
+        <section>
+            <h2>Riwayat Pendidikan</h2>
+            <table>
+                <tr>
+                    <td>2018 - 2021</td>
+                    <td>SMAN 1 Kedungwaru</td>
+                </tr>
+                <tr>
+                    <td>2021 - Sekarang</td>
+                    <td>Institut Teknologi Sepuluh Nopember</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Pengalaman</h2>
+            <table>
+                <tr>
+                    <td>Sep - Nov 2022</td>
+                    <td>Staf Schematics NPC</td>
+                </tr>
+                <tr>
+                    <td>Des 2022 - Jan 2023</td>
+                    <td>Staf Ini Lho ITS Forda Tulungagung</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Minat</h2>
+            <table>
+                <td>Machine Learning</td>
+                <td>|</td>
+                <td>IoT</td>
+                <td>|</td>
+                <td>Data Science</td>
+            </table>
+        </section>
+
+        <footer>
+            <div>
+                <p>Created by <a href="https://www.github.com/aurelioklv" target="_blank">aurelioklv</a>. | &copy; 2023
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
